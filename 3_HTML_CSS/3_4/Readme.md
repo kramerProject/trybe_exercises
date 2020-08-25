@@ -6,7 +6,7 @@ Transformar uma tag block para inline utilizando a propriedade display.
 
 Transformar uma tag inline para block utilizando a propriedade display.
 
-# Exercicios de HTML Semântico
+# Exercicios de HTML Semântico (Stomatopoda.html)
 
 O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre HTML semântico.
 
