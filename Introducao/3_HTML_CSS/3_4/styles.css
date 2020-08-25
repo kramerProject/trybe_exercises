@@ -1,0 +1,98 @@
+body {
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+nav button {
+    background-color: #1877F2;
+}
+nav button:hover {
+    background-color: gray;
+}
+
+nav button a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+article {
+    width: 70%;
+    border-right: 1px ridge gray;
+    overflow: auto;
+    
+    padding-right: 15px;
+
+    min-width: 100px;
+}
+
+article p {
+    margin-top:40px;
+}
+
+.info {
+    min-width: 10px;    
+}
+
+.info p {
+    margin-top:40px;
+}
+
+.info table {
+    position: relative;
+}
+
+.info table th, td {
+    border: 2px ridge ;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.boxers img {
+    width:275px;
+}
+
+.eyes img {
+    width:275px;
+}
+
+.behavior {
+    clear: both;
+    margin-top: 150px;
+}
+
+.references {
+    clear: both;
+    margin-top: 150px;
+}
+
+img {
+    float: left;
+    margin: 15px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+section p, table {
+    text-align: justify;
+}
+
+
+.article-video {
+    display: flex;
+}
+
+aside {
+    padding-top: 85px;
+    padding-left: 50px;
+    color: red;
+
+    text-align: center;
+
+}
