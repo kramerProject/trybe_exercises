@@ -96,7 +96,7 @@ article p {
     text-decoration:none;
 }
 
-img {
+article img {
     float: left;
     margin: 15px;
 }
@@ -126,26 +126,19 @@ aside {
     align-items: center;
 }
 
-.footer {
-    display: flex;
-
+footer {
     text-align: center;
-
-    justify-content: center;
-    align-items: center;
-
-    
 }
 
-.footer img {
+footer img {
     width: 90px
 }
 
-.footer p {
+footer p {
     padding-right: 40px;
     color: #de9d25;
 }
-.footer h4 {
+footer h4 {
     margin-left:15px;
 }
 
