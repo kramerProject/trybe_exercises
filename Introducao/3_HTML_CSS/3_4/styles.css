@@ -109,21 +109,15 @@ section p, table {
     text-align: justify;
 }
 
-.article-video {
-    display: flex;
-}
-
 aside {
     padding-left: 40px;
     color:black;
+    margin-top: 25px;
 
     width: 25%;
-    position: absolute;
     display: inline-block;
 
     text-align: center;
-
-    align-items: center;
 }
 
 footer {
