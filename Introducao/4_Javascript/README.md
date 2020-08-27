@@ -2,7 +2,7 @@
 
 O que vamos aprender?
 
-Aqui você vai aprender sobre a linguagem de programação JavaScript.
+Aqui você vai aprender sobre a linguagem de programação Javascript.
 
 Para isso, dividimos o conteúdo em cinco partes:
 
