@@ -1,4 +1,4 @@
-# Introdução ao JAVASCRIPT :hourglass_flowing_sand:
+# Introdução ao Javascript :hourglass_flowing_sand:
 
 O que vamos aprender?
 
