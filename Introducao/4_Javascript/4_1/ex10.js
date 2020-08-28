@@ -4,7 +4,7 @@ let quantity = 1
 let tax = 0.2
 
 
-let totalCost = (cost * (1+0.2)) * quantity
+let totalCost = (cost * (1+tax)) * quantity
 let profit = (price * quantity) - totalCost
 
 if (price < 0 || cost < 0) {
