@@ -1,3 +1,5 @@
+# Introdução ao desenvolvimento web / bloco 4 / dia 2
+
 # Exercícios de Array, Loop, For
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
