@@ -9,4 +9,4 @@ function invertedTriangle(number) {
     }
   }
 }
-invertedTriangle(5)
+invertedTriangle(7)
