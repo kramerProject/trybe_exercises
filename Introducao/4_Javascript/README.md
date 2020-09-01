@@ -12,7 +12,8 @@ Primeiro você aprenderá sobre variáveis, constantes, tipos primitivos, tipage
 
 [:white_check_mark:] JavaScript - Array e loop For
 
-[ ] JavaScript - Lógica de Programação e Algoritmos
+[:white_check_mark:] JavaScript - Lógica de Programação e Algoritmos
+
 A quarta parte aborda objetos, for/in e funções:
 
 [ ] JavaScript - Objetos e funções
