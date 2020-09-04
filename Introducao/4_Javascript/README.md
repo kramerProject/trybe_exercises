@@ -1,4 +1,4 @@
-# Introdução ao Javascript :hourglass_flowing_sand:
+# Introdução ao Javascript ::white_check_mark::
 
 O que vamos aprender?
 
@@ -16,6 +16,6 @@ Primeiro você aprenderá sobre variáveis, constantes, tipos primitivos, tipage
 
 A quarta parte aborda objetos, for/in e funções:
 
-[ ] JavaScript - Objetos e funções
+[:white_check_mark:] JavaScript - Objetos e funções
 
-[ ] Projeto Playground Functions
+[:white_check_mark:] Projeto Playground Functions
