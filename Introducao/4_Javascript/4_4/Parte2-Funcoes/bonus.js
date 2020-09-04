@@ -8,7 +8,7 @@ let numbers = {
   M: 1000,
 }
 
-let roman = "MXCIV"
+let roman = "MCMXCII"
 
 function convertRoman(roman, numbers) {
   let convertedNumber = []
