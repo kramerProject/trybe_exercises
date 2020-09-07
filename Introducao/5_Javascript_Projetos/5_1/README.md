@@ -42,7 +42,7 @@ Recupere o subtítulo pela tag.
 
 Coloque a cor dos retângulos como na cor desta imagem abaixo usando apenas o JavaScript!
 
-<img src="rectangles.png" width=50px>
+<img src="rectangles.png" width=150px>
 
 ###
 
