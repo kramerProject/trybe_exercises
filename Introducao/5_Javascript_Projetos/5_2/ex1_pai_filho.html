@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pai e Filho</title>
+</head>
+<body>
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+
+<script>
+  // 1 Acesse o elemento elementoOndeVoceEsta
+  let whereAreYou = document.getElementById('elementoOndeVoceEsta')
+  console.log(whereAreYou)
+
+  // 2 Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+  let dad = whereAreYou.parentNode
+  dad.style.color = 'green'
+  console.log(dad)
+
+  // 3 Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+  let firstChildChild = document.getElementById('primeiroFilhoDoFilho')
+  firstChildChild.innerText = 'Primeiro Filho do Filho'
+  console.log(firstChildChild)
+
+  // 4 Acesse o primeiroFilho a partir de pai
+  let firstKid = document.getElementById('pai').firstChild.nextSibling
+  console.log(firstKid)
+
+  // 5 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+  let firstKidFromWhereYou = whereAreYou.previousElementSibling
+  console.log(firstKidFromWhereYou)
+
+  // 6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+  let attention = whereAreYou.nextSibling
+  console.log(attention)
+
+  // 7 Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta
+  let thirdChild = whereAreYou.nextSibling.nextSibling
+  console.log(thirdChild)
+
+  // 8 Agora acesse o terceiroFilho a partir de pai.
+  let thirdChildFromDad = dad.childNodes
+  console.log(thirdChildFromDad[5])
+
+  // 9 Crie um irmão para elementoOndeVoceEsta.
+
+  let whereAreYouBrother = document.createElement('div')
+  whereAreYouBrother.id = 'whereAreYouBrother'
+  document.getElementById('pai').appendChild(whereAreYouBrother)
+  console.log(whereAreYouBrother)
+ 
+
+  // 10 Crie um filho para elementoOndeVoceEsta.
+  let thirdChildChild = document.createElement('div')
+  thirdChildChild.id = 'terceiroFilhodoFilho'
+  document.getElementById('elementoOndeVoceEsta').appendChild(thirdChildChild)
+  console.log(thirdChildChild)
+  
+
+  // 11 Crie um filho para primeiroFilhoDoFilho.
+  let childOfFirstChildChild = document.createElement('div')
+  childOfFirstChildChild.id = 'filhoDoPrimeiroFilhodoFilho'
+  document.getElementById('primeiroFilhoDoFilho').appendChild(childOfFirstChildChild)
+  console.log(childOfFirstChildChild)
+
+  // 12 A partir desse filho criado, acesse terceiroFilho.
+  let accessThirdChild= childOfFirstChildChild.parentNode.parentNode.nextSibling.nextSibling
+  console.log(accessThirdChild)
+
+  // 13 Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
+  let fourthChild = document.getElementById('quartoEUltimoFilho')
+  console.log(fourthChild)
+
+  let secondChildChild = document.getElementById('segundoEUltimoFilhoDoFilho')
+
+  let removeList = [firstKid, thirdChild, fourthChild, whereAreYouBrother, attention]
+  let removeWhereList = [secondChildChild, thirdChildChild]
+
+  function deleteElements(removeList, father) {
+    
+    for (let element of removeList) {
+      let remove = document.getElementById(father).removeChild(element)
+    }
+  }
+
+  deleteElements(removeList, 'pai')
+  deleteElements(removeWhereList, 'elementoOndeVoceEsta')
+  deleteElements([childOfFirstChildChild], 'primeiroFilhoDoFilho')
+
+</script>
+  
+</body>
+</html>
