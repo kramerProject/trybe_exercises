@@ -128,7 +128,18 @@
       document.getElementsByClassName('main-content')[0].removeChild(left)
 
       // 4
-      
+      let right = document.getElementsByClassName('right-content')[0]
+      right.style.marginRight = 'auto'
+
+      // 5
+      let center = document.getElementsByClassName('center-content')[0]
+      center.style.backgroundColor = 'green'
+
+      // 6
+      let unorderedList = document.getElementsByTagName('li')
+      for (let i = 9; i > 7; i -= 1) {
+        document.getElementsByTagName('ul')[0].removeChild(unorderedList[i])
+      }
 
     </script>
   </body>
