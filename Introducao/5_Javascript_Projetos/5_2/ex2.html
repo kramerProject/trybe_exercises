@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Parte I
+      // Functions
+      /* Creates a tag with a text and determines parent */
+      function firstTag(tagname, text, father) {
+        let title = document.createElement(tagname)
+        title.innerText = text
+
+        let parent = document.getElementsByTagName(father)[0]
+        parent.appendChild(title)
+      }
+      /* Creates a tag with a classname and determines parent(tag or class) */
+      function tagWithClass(tag, classe, father) {
+        let tagItem = document.createElement(tag)
+        if (classe) {
+          tagItem.className = classe
+        }
+        document.querySelectorAll(father)[0].appendChild(tagItem)
+      }
+
+
+      // 1 
+      firstTag('h1', 'Exercício 5.2 - JavaScript DOM', 'body')
+      
+      // 2
+      tagWithClass('div', 'main-content', 'body')
+
+      // 3
+      tagWithClass('div', 'center-content', '.main-content')
+
+      // 4 
+      tagWithClass('p', '', '.center-content')
+      let firstParagraph = document.querySelectorAll('.center-content p')[0]
+      firstParagraph.innerText = 'Aprendendo a manipular os elementos do DOM.'
+
+      
+      
+      
+
+
+    </script>
+  </body>
+</html>
