@@ -76,7 +76,6 @@
         document.querySelectorAll(father)[0].appendChild(tagItem)
       }
 
-
       // 1 
       firstTag('h1', 'Exercício 5.2 - JavaScript DOM', 'body')
       
@@ -91,10 +90,45 @@
       let firstParagraph = document.querySelectorAll('.center-content p')[0]
       firstParagraph.innerText = 'Aprendendo a manipular os elementos do DOM.'
 
-      
-      
-      
+      // 5 
+      tagWithClass('div', 'left-content', '.main-content')
 
+      // 6
+      tagWithClass('div', 'right-content', '.main-content')
+
+      // 7
+      tagWithClass('img', 'small-image', '.left-content')
+      let leftImage = document.querySelectorAll('.left-content .small-image')[0]
+      leftImage.src = 'https://picsum.photos/200'
+      
+      // 8 
+      tagWithClass('ul', '', '.right-content')
+      for (let i = 1; i < 11; i += 1) {
+        tagWithClass('li', '', '.right-content ul')
+        document.querySelectorAll('.right-content li')[i-1].innerText = i
+      }
+      // 9
+      for (let i = 0; i < 3; i += 1) {
+        tagWithClass('h3', '', '.main-content')
+      }
+
+      // Parte II
+      // 1
+      let title = document.getElementsByTagName('h1')[0]
+      title.className = 'title'
+
+      // 2
+      let subTitle = document.getElementsByTagName('h3')
+      for (let i in subTitle) {
+        subTitle[i].className = 'description'
+      }
+
+      // 3
+      let left = document.querySelectorAll('.left-content')[0]
+      document.getElementsByClassName('main-content')[0].removeChild(left)
+
+      // 4
+      
 
     </script>
   </body>
