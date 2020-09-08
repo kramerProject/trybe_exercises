@@ -66,6 +66,8 @@
 
         let parent = document.getElementsByTagName(father)[0]
         parent.appendChild(title)
+
+        return title
       }
       /* Creates a tag with a classname and determines parent(tag or class) */
       function tagWithClass(tag, classe, father) {
@@ -76,33 +78,62 @@
         document.querySelectorAll(father)[0].appendChild(tagItem)
       }
 
+      let features = [
+        {
+          tag: 'div',
+          classe: 'main-content',
+          father: 'body',
+        },
+        {
+          tag: 'div',
+          classe: 'center-content',
+          father: '.main-content',
+        },
+        {
+          tag: 'p',
+          classe: '',
+          father: '.center-content',
+        },
+        {
+          tag: 'div',
+          classe: 'left-content',
+          father: '.main-content',
+        },
+        {
+          tag: 'div',
+          classe: 'right-content',
+          father: '.main-content',
+        },
+        {
+          tag: 'img',
+          classe: 'small-image',
+          father: '.left-content',
+        },
+        {
+          tag: 'ul',
+          classe: '',
+          father: '.right-content',
+        },
+      ]
       // 1 
-      firstTag('h1', 'Exercício 5.2 - JavaScript DOM', 'body')
+      let first = firstTag('h1', 'Exercício 5.2 - JavaScript DOM', 'body')
+      console.log(first)
       
-      // 2
-      tagWithClass('div', 'main-content', 'body')
-
-      // 3
-      tagWithClass('div', 'center-content', '.main-content')
-
+      // Creating Tags
+      // 2, 3, 4, 5, 6, 7, 8
+      for (let i = 0; i < features.length; i +=1) {
+        let featureItem = features[i]
+        let element = tagWithClass(featureItem.tag, featureItem.classe, featureItem.father)
+      }
       // 4 
-      tagWithClass('p', '', '.center-content')
       let firstParagraph = document.querySelectorAll('.center-content p')[0]
       firstParagraph.innerText = 'Aprendendo a manipular os elementos do DOM.'
 
-      // 5 
-      tagWithClass('div', 'left-content', '.main-content')
-
-      // 6
-      tagWithClass('div', 'right-content', '.main-content')
-
-      // 7
-      tagWithClass('img', 'small-image', '.left-content')
+      // 7 Adding image
       let leftImage = document.querySelectorAll('.left-content .small-image')[0]
       leftImage.src = 'https://picsum.photos/200'
       
-      // 8 
-      tagWithClass('ul', '', '.right-content')
+      // 8 Add list itens
       for (let i = 1; i < 11; i += 1) {
         tagWithClass('li', '', '.right-content ul')
         document.querySelectorAll('.right-content li')[i-1].innerText = i
@@ -117,17 +148,18 @@
       let title = document.getElementsByTagName('h1')[0]
       title.className = 'title'
 
-      // 2
+      // 2 adding a class name description
       let subTitle = document.getElementsByTagName('h3')
       for (let i in subTitle) {
         subTitle[i].className = 'description'
       }
 
-      // 3
+      // 3 Removing image tag
       let left = document.querySelectorAll('.left-content')[0]
-      document.getElementsByClassName('main-content')[0].removeChild(left)
+      let main = document.getElementsByClassName('main-content')[0]
+      main.removeChild(left)
 
-      // 4
+      // 4 margin
       let right = document.getElementsByClassName('right-content')[0]
       right.style.marginRight = 'auto'
 
