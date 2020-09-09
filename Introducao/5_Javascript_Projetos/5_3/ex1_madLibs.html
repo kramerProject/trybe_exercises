@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Mad Libs</h1>
+ 
+ <ul>
+  <li>Noun: <input type="text" id="noun">
+  <li>Adjective: <input type="text" id="adjective">
+  <li>Someone's Name: <input type="text" id="person">
+ </ul>
+ 
+ <button id="lib-button">Lib it!</button>
+  
+ <div id="story"></div>
+ <script>
+   let botao = document.getElementById('lib-button')
+   let story = document.getElementById('story')
+   
+   function makeMadLib() {
+     let noun = document.getElementById('noun').value
+     let adjective = document.getElementById('adjective').value
+     let person = document.getElementById('person').value
+     
+     let newString = `${noun} ${adjective} ${person}`
+     story.innerText = newString
+     console.log(newString)
+   }
+
+   botao.addEventListener('click', makeMadLib)
+ </script>
+
+  
+ </body>
+</html>
+  
+</body>
+</html>
