@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Walk</title>
+</head>
+<body>
+  <img id="cat" style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" width="200px">
+
+
+
+  <script>
+    window.onload = function() {
+
+      let maxWidth = 1000
+      let catImage = document.getElementById('cat')
+      catImage.style.left = "0px"
+      let catDanceImage = 'tenor.gif'
+      let previousPosition = 0
+      let direction = true
+      let onCenter = 0
+      let counter = 0
+
+      function catWalk() {
+        // Bonus 1
+        catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
+        if (parseInt(catImage.style.left) > window.innerWidth) {
+          resetCat()
+        }
+      }
+      
+      function resetCat() {
+        catImage.style.left = '0px'
+      }
+      // bonus 2
+      function catWalkForthAndBack() {
+        console.log(direction)
+
+        if (direction) {
+          catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
+        }
+        if (parseInt(catImage.style.left) > window.innerWidth) {
+          direction = false
+        }
+        if (direction === false) {
+          catImage.style.left = (parseInt(catImage.style.left) - 10) + 'px'
+        }
+        if (parseInt(catImage.style.left) === 0) {
+          direction = true
+        }
+        
+      }
+
+      // bonus 3
+      function catDance() {
+
+        do {
+          catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
+          console.log(parseInt(catImage.style.left), maxWidth / 2)
+        } while (parseInt(catImage.style.left) < (maxWidth / 2))
+
+      }
+
+      setInterval(catDance, 50)
+    }
+  </script>
+</body>
+</html>

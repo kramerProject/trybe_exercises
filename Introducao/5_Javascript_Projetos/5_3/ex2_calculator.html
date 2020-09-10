@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+
+    window.onload = function() {
+      console.log('Carregado')
+    }
+
+    // Solution Box
+    let solution = document.getElementById('solution');
+    
+    // buttons and pi
+    let pi = 3.14
+    let squareButton = document.getElementById('square-button');
+    let halfButton = document.getElementById('half-button')
+    let percentButton = document.getElementById('percent-button')
+    let areaButton = document.getElementById('area-button')
+
+
+    // Calculate function
+    function calculateResult() {
+      let squareInput = document.getElementById('square-input').value;
+      let halfInput = document.getElementById('half-input').value
+      let percentOneInput = document.getElementById('percent1-input').value
+      let percentTwoInput = document.getElementById('percent2-input').value
+      let areaInput = document.getElementById('area-input').value
+
+      if (squareInput > 0) {
+        solution.innerText = squareInput * squareInput
+        console.log(solution)
+      } else if (halfInput > 0) {
+        solution.innerText = halfInput / 2
+      } else if (percentOneInput > 0 && percentTwoInput > 0) {
+        solution.innerText = percentOneInput / percentTwoInput
+      } else if (areaInput > 0) {
+        solution.innerText = pi * ((areaInput) ** 2)
+      }
+    }
+
+    // addevents
+    squareButton.addEventListener('click', calculateResult)
+    halfButton.addEventListener('click', calculateResult)
+    percentButton.addEventListener('click', calculateResult)
+    areaButton.addEventListener('click', calculateResult)
+
+  </script>
+</body>
+</html>
