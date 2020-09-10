@@ -14,6 +14,7 @@
       let catImage = document.getElementById('cat')
       catImage.style.left = "0px"
       let previousPosition = 0
+      let direction = true
 
       function catWalk() {
         // Bonus 1
@@ -26,12 +27,23 @@
       function resetCat() {
         catImage.style.left = '0px'
       }
-
+      // bonus 2
       function catWalkForthAndBack() {
-        catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
-        if (parseInt(catImage.style.left) - previousPosition >= 0) {
+        console.log(direction)
 
+        if (direction) {
+          catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
         }
+        if (parseInt(catImage.style.left) > window.innerWidth) {
+          direction = false
+        }
+        if (direction === false) {
+          catImage.style.left = (parseInt(catImage.style.left) - 10) + 'px'
+        }
+        if (parseInt(catImage.style.left) === 0) {
+          direction = true
+        }
+        
       }
       setInterval(catWalkForthAndBack, 50)
     }
