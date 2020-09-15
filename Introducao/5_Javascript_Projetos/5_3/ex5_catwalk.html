@@ -13,11 +13,11 @@
   <script>
     window.onload = function() {
 
-      let maxWidth = 1000
+      let maxWidth = window.innerWidth
       let catImage = document.getElementById('cat')
       catImage.style.left = "0px"
+      let originalImage = catImage.src
       let catDanceImage = 'tenor.gif'
-      let previousPosition = 0
       let direction = true
       let onCenter = 0
       let counter = 0
@@ -35,7 +35,6 @@
       }
       // bonus 2
       function catWalkForthAndBack() {
-        console.log(direction)
 
         if (direction) {
           catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
@@ -54,14 +53,36 @@
 
       // bonus 3
       function catDance() {
-
-        do {
+        
+        
+        if (direction && onCenter === 0) {
           catImage.style.left = (parseInt(catImage.style.left) + 10) + 'px'
-          console.log(parseInt(catImage.style.left), maxWidth / 2)
-        } while (parseInt(catImage.style.left) < (maxWidth / 2))
-
-      }
-
+          
+        }
+        if (direction === true && parseInt(catImage.style.left) > maxWidth / 2) {
+          onCenter = 1
+          counter += 1
+          if (counter > 50) {
+            onCenter = 0
+          }
+        }
+        if (parseInt(catImage.style.left) > maxWidth) {
+          direction = false
+        }
+        if (direction === false && onCenter === 0) {
+          catImage.style.left = (parseInt(catImage.style.left) - 10) + 'px'
+        }
+        if (direction === false && parseInt(catImage.style.left) < maxWidth / 2) {
+          onCenter = 1
+          counter +=1
+          if (counter > 50) {
+            onCenter = 0
+          }
+          if (parseInt(catImage.style.left) === 0) {
+            direction = true
+        }  
+        }
+      }  
       setInterval(catDance, 50)
     }
   </script>
