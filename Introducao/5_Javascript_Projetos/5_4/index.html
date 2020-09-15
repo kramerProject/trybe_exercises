@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Storage</title>
+</head>
+<body id="main-content">
+  <h1>Titulo 1</h1>
+  <h2>Lorem</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cumque earum eos, non, sapiente ipsum quae accusamus adipisci ad velit sint quidem sunt quasi asperiores laborum. At odio libero dolorem.</p>
+  <h2>Titulo 2</h2>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos nam nostrum quidem deserunt optio quas rerum aliquam et perspiciatis libero, dignissimos amet cum! Officiis id nam debitis voluptatum ipsum ipsam.</p>
+
+  <button id="button1">SAVE</button>
+  <h3>Digite o background color</h3>
+  <input id="bg-color" type="text">
+  <h3>Text Color</h3>
+  <input id="text-color" type="text">
+  <h3>Font size</h3>
+  <input id="font-size" type="text">
+  <h3>Espaçamento entre linhas</h3>
+  <input id="space" type="text">
+  <h3>Font Family</h3>
+  <input id="font-family" type="text">
+
+  <script>
+    const mainBody = document.getElementById('main-content')
+
+    // inputbox
+    let inputBackColor = document.getElementById('bg-color')
+    let inputTextColor = document.getElementById('text-color')
+    let inputFont = document.getElementById('font-size')
+    let inputSpace = document.getElementById('space')
+    let inputFontFamily = document.getElementById('font-family')
+
+    let mainButton = document.getElementById('button1')
+
+    function inputText() {
+      // setting storage values
+      localStorage.clear()
+      localStorage.setItem("back-ground", inputBackColor.value)
+      localStorage.setItem("text-color", inputTextColor.value)
+      localStorage.setItem("font-size", inputFont.value)
+      localStorage.setItem("space", inputSpace.value)
+      localStorage.setItem("font-family", inputFontFamily.value)
+      change()
+    }
+      
+
+    function initialize() {
+      mainBody.style.background = localStorage.getItem("back-ground")
+      mainBody.style.color = localStorage.getItem("text-color")
+      mainBody.style.fontSize = localStorage.getItem("font-size")
+      mainBody.style.lineHeight = localStorage.getItem("space")
+      mainBody.style.fontFamily = localStorage.getItem("font-family")
+    }
+
+    mainButton.addEventListener('click', inputText)
+
+    initialize()
+
+    function change() {
+      mainBody.style.background = inputBackColor.value
+      mainBody.style.color = inputTextColor.value
+      mainBody.style.fontSize = inputFont.value
+      mainBody.style.lineHeight = inputSpace.value
+      mainBody.style.fontFamily = inputFontFamily.value
+    }
+
+  </script>
+  
+</body>
+</html>
