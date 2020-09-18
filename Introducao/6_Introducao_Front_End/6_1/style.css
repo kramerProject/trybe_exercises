@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgb(234, 237, 240);
+  color: rgb(93, 96, 99);
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  background-color: rgb(246, 247, 248);
+  font-size: 40px;
+  height: 80px;
+  margin: 0 auto 60px auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+form {
+  background-color: rgb(246, 247, 248);
+  border: 1px solid black;
+  margin: 0 auto 20px auto;
+  width: 80%;
+}
+
+.line-content {
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.label-content {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.personal-data {
+  margin-bottom: 20px;
+}
+
+.button-content {
+  margin: 20px;
+  text-align: center;
+}
+.button-content div {
+  display: inline-block;
+  width: 20%;
+}
+
+#validate, #clear {
+  background-color: rgb(39, 182, 93);
+  border-radius: 10px;
+  height: 40px;
+  width: 60%;
+}
+
+.tipo-content {
+  margin-bottom: 15px;
+}
+
+.label-content.tipo {
+  margin-bottom: 15px;
+}
+
+.carrer-info {
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+
+#resume-content {
+  width: 80%;
+  margin: 5px auto 5px auto;
+  text-align: left;
+}
+#resume-content h1 {
+  width: 80%;
+  border-bottom: 2px solid black;
+  margin: 0 auto 20px auto;
+  text-align: center;
+
+}
+
+.tipo-content label input {
+  width: 10%;
+}
+
+.line-resume-content {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  margin: 15px 20px 10px auto;
+  width: 100%;
+}
