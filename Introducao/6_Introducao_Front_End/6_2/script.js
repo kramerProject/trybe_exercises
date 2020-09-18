@@ -40,12 +40,8 @@ clearButton.addEventListener("click", function() {
 })
 
 validateButton.addEventListener("click", function (event){
-    let message = validateDate()
-    console.log(message)
-    if (message === false) {
-      event.preventDefault()
-      outPutInformation()
-    }
+    event.preventDefault()
+    console.log('hello')
 })
 
 function loadStates (states) {
@@ -58,37 +54,6 @@ function loadStates (states) {
       stateCombo.appendChild(state);
     }
   }
-}
-
-function validateDate() {
-  const initialDateInput = document.getElementById("initial-date").value
-  let message = false
-
-  if (initialDateInput.length === 10 && initialDateInput[2] === "/" && initialDateInput[5] === "/") {
-    let day = parseInt(initialDateInput.slice(0, 2))
-    let month = parseInt(initialDateInput.slice(3, 5))
-    let year = parseInt(initialDateInput.slice(6, 10))
-    message = validateDayMonthyear(day, month, year)
-  } else {
-    alert("Data precisa ser no formato dd/mm/yyyy")
-    message = true
-  }
-  return message
-}
-
-function validateDayMonthyear(day, month, year) {
-  let message = false
-  if (day < 0 || day > 31) {
-    alert("O dia precisa ser maior que 0 e menor ou igual a 31")
-    message = true
-  } else if (month < 0 || month > 12) {
-    alert("O mês precisa ser maior que 0 e menor ou igual a 12")
-    message = true
-  } else if (year < 0) {
-    alert("O ano não pode ser negativo")
-    message = true
-  }
-  return message
 }
 
 function outPutInformation() {
@@ -108,3 +73,35 @@ function createDivElement(key, value) {
   newDiv.className = "line-resume-content"
   resumeContent.appendChild(newDiv)
 }
+
+
+new JustValidate('.cv-content', {
+  rules: {
+    name: {
+      required: true,
+      maxlength: 40
+    },
+    text: {
+      required: true,
+      maxlength: 200
+    },
+    city: {
+      required: true
+    },
+    cargo: {
+      required: true
+    },
+  },
+  submitHandler: function(form, values) {
+    console.log(form, values)
+  }
+});
+
+new window.JustValidate('.cv-content', {
+Messages: {
+  required: 'The field is required',
+  email: 'Please, type a valid email',
+  maxLength: 'The field must contain a maximum of :value characters',
+  minLength: 'The field must contain a minimum of :value characters',
+},
+});
