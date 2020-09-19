@@ -27,7 +27,7 @@
 
         <div class="form-group">
           <label for="" class="label-content">Endereço:</label>
-          <input id="address" name="address" type="text" maxlength="200" required="required" class="line-content form-control" data-validate-field="text">
+          <input id="address" name="address" type="text" maxlength="200" required="required" class="line-content form-control" data-validate-field="address">
         </div>
   
         <div class="form-group">
@@ -38,7 +38,7 @@
         <div class="form-group">
           <label for="state" class="label-content">Estado:</label>
           <select id="state" name="estado" id="state" required="required" class="line-content form-control">
-            <option selected value="">vazio</option>
+            <option selected>vazio</option>
           </select>
         </div>
 
@@ -58,7 +58,7 @@
 
       <div class="form-group">
         <label for="" class="label-content">Resumo:</label>
-        <textarea id="resume" name="resumo" id="resume" cols="30" rows="5" maxlength="100" required="required" class="line-content form-control"></textarea>
+        <textarea id="resume" name="resumo" id="resume" cols="30" rows="5" maxlength="100" required="required" class="line-content form-control" data-validate-field="resume"></textarea>
       </div>
 
       <div class="form-group">
@@ -68,7 +68,7 @@
 
       <div class="form-group">
         <label for="" class="label-content">Descrição do Cargo:</label>
-        <input id="description" type="text" maxlength="10" required="required" class="line-content form-control" data-validate-field="text">
+        <input id="description" type="text" maxlength="10" required="required" class="line-content form-control" data-validate-field="description">
       </div>
 
       <div class="form-group">
@@ -76,21 +76,21 @@
         <input id="initial-date" type="text" required="required" class="line-content form-control">
       </div>
     </fieldset>
-    <section class="button-content container-xl">
-      <div class="form-group">
-        <button id="validate" type="submit" class="btn btn-primary form-group form-control">Enviar</button>
-      </div>
-      <div><button id="clear" class="btn btn-primary form-group form-control">Clear</button></div>
-    </section>
+      <button id="validate" type="submit" class="btn btn-primary">Enviar</button>
+      <div><button id="clear" type="button" class="btn btn-secondary">Clear</button></div>
   </form>
+      
 
   <section id="resume-content">
     <h1><strong>Resumo:</strong></h1>
     <hr>
   </section>
-  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+
+  
   <script src="pikaday.js"></script>
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <script src="script.js"></script>
+  
 
 </body>
 </html>
