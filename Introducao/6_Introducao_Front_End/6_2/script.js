@@ -24,7 +24,6 @@ apChoice.addEventListener("click",  function() {
   }
 })
 
-loadStates(states)
 
 clearButton.addEventListener("click", function() {
   const cvContent = document.getElementsByClassName("line-content")
@@ -39,10 +38,7 @@ clearButton.addEventListener("click", function() {
     }
 })
 
-validateButton.addEventListener("click", function (event){
-    event.preventDefault()
-    console.log('hello')
-})
+loadStates(states)
 
 function loadStates (states) {
   const stateCombo = document.getElementById("state");
@@ -55,6 +51,41 @@ function loadStates (states) {
     }
   }
 }
+
+/*validateButton.addEventListener("click", function (event){
+  event.preventDefault()
+  outPutInformation()
+})*/
+
+new window.JustValidate('.cv-content', {
+  rules: {
+    name: {
+      required: true,
+    },
+    email: {
+      required: true,
+    },
+    address: {
+      required: true
+    },
+    city: {
+      required: true
+    },
+    cargo: {
+      required: true
+    },
+  },
+  messages: {
+  },
+  focusWrongField: true,
+  submitHandler: function (form, values, ajax) {
+    outPutInformation()
+  },
+  invalidFormCallback: function (errors) {
+    console.log(errors);
+  },
+});
+
 
 function outPutInformation() {
   const formInputElement = document.getElementsByClassName("line-content")
@@ -73,35 +104,3 @@ function createDivElement(key, value) {
   newDiv.className = "line-resume-content"
   resumeContent.appendChild(newDiv)
 }
-
-
-new JustValidate('.cv-content', {
-  rules: {
-    name: {
-      required: true,
-      maxlength: 40
-    },
-    text: {
-      required: true,
-      maxlength: 200
-    },
-    city: {
-      required: true
-    },
-    cargo: {
-      required: true
-    },
-  },
-  submitHandler: function(form, values) {
-    console.log(form, values)
-  }
-});
-
-new window.JustValidate('.cv-content', {
-Messages: {
-  required: 'The field is required',
-  email: 'Please, type a valid email',
-  maxLength: 'The field must contain a maximum of :value characters',
-  minLength: 'The field must contain a minimum of :value characters',
-},
-});
