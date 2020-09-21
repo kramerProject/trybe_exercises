@@ -44,7 +44,7 @@ validateButton.addEventListener("click", function (event){
     console.log(message)
     if (message === false) {
       event.preventDefault()
-      outPutInformation()
+      /*outPutInformation()*/
     }
 })
 
