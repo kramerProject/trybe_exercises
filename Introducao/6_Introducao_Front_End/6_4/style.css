@@ -1,0 +1,120 @@
+.flex-container14 {
+  border: 5px solid black;
+  height: 100px;
+  display: flex;
+}
+
+.flex-container14 > :nth-child(2) {
+  background-color: greenyellow;
+  order: 2;
+}
+
+.flex-item {
+  background-color: green;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container15 {
+  border: 5px solid black;
+  height: 100px;
+  display: flex;
+}
+
+.flex-container15 > :nth-child(4) {
+  background-color: greenyellow;
+  order: -1;
+}
+
+.flex-container16 {
+  border: 5px solid black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container16 > :nth-child(3) {
+  background-color: greenyellow;
+  align-self: flex-end;
+}
+
+.flex-container17 {
+  border: 5px solid black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.yellow {
+  order: 1;
+  align-self: flex-end;
+  background-color: greenyellow;
+}
+
+.flex-container18 {
+  border: 5px solid black;
+  width: 40%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container19 {
+  border: 5px solid black;
+  width: 60%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-container20 {
+  border: 5px solid black;
+  width: 60%;
+  height: 250px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-container21 {
+  border: 5px solid black;
+  width: 50%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 250px;
+  display: flex;
+}
+
+.flex-container22 {
+  border: 5px solid black;
+  width: 50%;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  height: 250px;
+  display: flex;
+}
+
+.flex-container23 {
+  border: 5px solid black;
+  width: 50%;
+  flex-wrap: wrap;
+  height: 250px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
+.flex-container24 {
+  border: 5px solid black;
+  width: 50%;
+  height: 250px;
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}
+
