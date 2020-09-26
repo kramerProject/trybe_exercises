@@ -1,0 +1,83 @@
+body {
+  margin: 40px;
+}
+
+.container h1, h2, h3, p {
+  font-size: 1.2rem;
+}
+
+.container header, p {
+  text-align: center;
+}
+
+li {
+  margin: 4px;
+}
+
+.main-content p {
+
+  text-align: justify;
+}
+
+.container nav ul {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.container nav ul li {
+  color: white;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 800px) {
+  .container h1, h2, h3, p {
+    font-size: 2rem;
+  }
+
+  .container .aside-one ul li {
+    font-size: 1.5rem;
+  }
+
+  .container .aside-two ul li {
+    font-size: 1.5rem;
+  }
+
+  .container nav ul {
+    justify-content: center;
+  }
+
+  .container nav ul li {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: orange;
+
+  }
+
+  .container h1, h2, h3, p {
+    font-size: 2.5rem;
+  }
+
+  .container .aside-one ul li {
+    font-size: 2rem;
+  }
+
+  .container .aside-two ul li {
+    font-size: 2rem;
+  }
+}

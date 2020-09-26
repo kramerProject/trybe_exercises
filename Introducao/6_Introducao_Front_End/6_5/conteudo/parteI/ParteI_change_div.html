@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+
+  div.example-pai > :nth-child(2) {
+    border: 8px solid black;
+    background: orange;
+    opacity: 0;
+    height: 0px;
+    padding: 0px;
+    width: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 50px;
+
+    padding: 40px;
+    border: 8px solid black;
+    background-color: red;
+  }
+
+  div.example-pai > :nth-child(1) {
+    font-size: 0px;
+    border:0px;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  div.example-pai {
+    font-size: 50px;
+    display: flex;
+    padding: 50px;
+    border: 8px solid black;
+    background-color: orange;
+  }
+
+  div.example {
+    font-size: 50px;
+    display: flex;
+    padding: 50px;
+    border: 8px solid black;
+    background-color: gray;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Change the appearance of DIV on different screen sizes</h2>
+
+<div class="example-pai">
+  <div class="example">Example DIV.</div>
+  <div class="example">Example DIV2.</div>
+</div>
+
+<p>When the browser's width is between 600 and 900px, change the appearance of DIV. 
+<strong>Resize the browser window to see the effect</strong>.</p>
+
+</body>
+</html>
