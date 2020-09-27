@@ -7,9 +7,10 @@ const longestWord = (phrase) => {
   for (let index = 0; index < words.length; index += 1) {
     if (words[index].length > longest) {
       result = words[index];
+      longest = words[index].length
     }
   }
   return result;
 }
 
-console.log(longestWord('qts palavras eagoraqualamaior'))
+console.log(longestWord('Qual a maior palavra da frase'))
