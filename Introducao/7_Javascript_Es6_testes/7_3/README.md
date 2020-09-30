@@ -1,11 +1,12 @@
 # Introdução ao desenvolvimento web / bloco 7 / dia 3
 
 
-# Praticando a implementação de testes
+# Parte I - Praticando a implementação de testes
 
 Você vai implementar vários testes em contextos diferentes a fim de consolidar a mecânica e também a forma de pensar em testes.
 
 Copie as funções já implementadas e desenvolva os testes. Separe as funções em arquivos para evitar qualquer tipo de problema.
+
 
 1. A função sum(a, b) retorna a soma do parâmetro a com o b
 
@@ -141,7 +142,7 @@ const obj3 = {
 
 ```
 
-# Praticando TDD
+# ParteII - Praticando TDD
 
 Nessa parte os exercícios estão divididos em dois grupos: primeiro, você vai escrever código baseado nos testes. Depois você lerá um código e o que ele tem que trazer de resposta. A partir disso, você escreverá testes e os usará de base para alterar o código. Como assim? Bem, vamos passo a passo!
 
@@ -222,7 +223,7 @@ assert.strictEqual(output, expected);
 
 ```
 
-# Reescrevendo funções utilizando TDD
+# ParteIII - Reescrevendo funções utilizando TDD
 
 Agora mudamos um pouco: temos uma função pronta (e feita de forma errada, ou seja, sem funcionar direito), os parâmetros que devem ser passados a ela e a resposta esperada. Escreva testes de modo a entender e testar o comportamento da função e, depois, altere-a para que passe nos testes. Use os casos de teste acima como inspiração, se tiver dúvidas!
 

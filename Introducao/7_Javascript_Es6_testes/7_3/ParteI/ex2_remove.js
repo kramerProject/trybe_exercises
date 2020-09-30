@@ -22,7 +22,7 @@ assert.notDeepStrictEqual(expected2, [1, 2, 3, 4], 'objects must be different')
 // teste 3
 const expected3 = myRemove([1, 2, 3, 4], 3)
 expected3.splice(2, 0, 3)
-assert.strictEqual(expected3, [1, 2, 3, 4], 'must be equal')
+assert.deepStrictEqual(expected3, [1, 2, 3, 4], 'must be equal')
 
 
 // teste 4
