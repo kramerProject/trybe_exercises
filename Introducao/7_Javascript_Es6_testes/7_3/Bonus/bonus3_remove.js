@@ -4,6 +4,7 @@ const removeMiddle = (words) => {
   const newArray = []
   const indexKeep = (words.length - 1) / 2
   newArray.push(words[indexKeep])
+  words.splice(indexKeep, 1)
 
   return newArray
 }
@@ -18,4 +19,3 @@ const output = removeMiddle(words);
 assert.deepStrictEqual(output, expectedOutput);
 assert.deepStrictEqual(words, expectedWords);
 
-console.log(removeMiddle(words))
