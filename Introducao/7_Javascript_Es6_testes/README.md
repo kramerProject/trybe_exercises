@@ -1,4 +1,4 @@
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Bloco 7: JavaScript ES6 & Testes Unitários::white_check_mark::
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_

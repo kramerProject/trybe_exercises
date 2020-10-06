@@ -1,4 +1,4 @@
-##### Bloco 6: Introdução - Front-end:hourglass_flowing_sand:
+##### Bloco 6: Introdução - Front-end::white_check_mark::
 
 - [X] 6-1: _HTML & CSS - Forms_
 - [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
