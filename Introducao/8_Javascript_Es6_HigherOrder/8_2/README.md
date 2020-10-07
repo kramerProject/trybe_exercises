@@ -1,4 +1,4 @@
-# Introdução ao desenvolvimento web / bloco 8 / dia 1
+# Introdução ao desenvolvimento web / bloco 8 / dia 2
 
 # Instruções para realização dos exercícios
 
