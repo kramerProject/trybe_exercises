@@ -1,4 +1,4 @@
-##### Bloco 8: JavaScript ES6
+##### Bloco 8: JavaScript ES6::white_check_mark::
 
 - [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_

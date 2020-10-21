@@ -26,7 +26,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [:white_check_mark:] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-07-project-lessons-learned/tree/kramer-lessons-learned-project)_
+- [X] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-07-project-lessons-learned/tree/kramer-lessons-learned-project)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
-- [:white_check_mark:] 4-5: _[Projeto - Playground Functions]()_
+- [X] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -76,7 +76,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
+- [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Promises_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
