@@ -26,7 +26,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [:white_check_mark:] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-07-project-lessons-learned/tree/kramer-lessons-learned-project)_
+- [X] 3-5: _[Projeto - HTML & CSS](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/lessons-learned)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
-- [:white_check_mark:] 4-5: _[Projeto - Playground Functions]()_
+- [X] 4-5: _[Projeto - Playground Functions](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Playground_Functions)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -42,11 +42,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Meme Generator]()_
-- [X] 5-6: _[Projeto - Arte com Pixels]()_
-- [X] 5-7: _[Projeto - Lista de tarefas]()_
-- [X] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [X] 5-7: _[Projeto - Carta Misteriosa]()_
+- [X] 5-5: _[Projeto - Meme Generator](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/meme_generator)_
+- [X] 5-6: _[Projeto - Arte com Pixels](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/pixel-art)_
+- [X] 5-7: _[Projeto - Lista de tarefas](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/ToDo_list)_
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Color_Guess)_
+- [X] 5-7: _[Projeto - Carta Misteriosa](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Mistery_letter)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -57,14 +57,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [X] 6-6: _[Projeto - Página inicial do Facebook](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Facebook)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Unit_Tests)_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -72,11 +72,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-5: _[Projeto - Zoo functions]()_
+- [X] 8-5: _[Projeto - Zoo functions](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Unit_Tests)_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
+- [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Promises_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
