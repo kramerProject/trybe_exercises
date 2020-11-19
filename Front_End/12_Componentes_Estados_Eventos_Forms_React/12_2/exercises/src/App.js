@@ -2,10 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import  Form from './Components/Form'
 
+import cities from './Components/Data'
+
+
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Form data={cities}/>
     </div>
   );
 }
