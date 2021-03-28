@@ -1,0 +1,16 @@
+{
+  "name": "calcula-imc",
+  "version": "1.0.0",
+  "description": "calcula imc",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "author": "kramer",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
