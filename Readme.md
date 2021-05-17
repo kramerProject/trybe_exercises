@@ -6,7 +6,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Introdução - Desenvolvimento Web :hourglass_flowing_sand:
+## Introdução - Desenvolvimento Web ::white_check_mark::
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -48,7 +48,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Color_Guess)_
 - [X] 5-7: _[Projeto - Carta Misteriosa](https://github.com/kramerProject/kramerProject.github.io/tree/master/projetos/Mistery_letter)_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end ::white_check_mark::
 
 ##### Bloco 6: Introdução - Front-end
 
