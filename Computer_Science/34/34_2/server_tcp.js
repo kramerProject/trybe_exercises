@@ -7,7 +7,6 @@ const server = net.createServer((c) => {
     console.log('client disconnected');
   });
   c.write('olá cliente');
-  c.pipe(c);
 
   c.on('data', (dt) => {
     console.log('data', dt.toString())   
